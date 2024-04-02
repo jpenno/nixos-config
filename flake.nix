@@ -31,6 +31,9 @@
           inherit system;
           modules = [ ./configuration.nix ];
         };
+        specialArgs = {
+          inherit theme;
+        };
       };
       homeConfigurations = {
         jp = home-manager.lib.homeManagerConfiguration {

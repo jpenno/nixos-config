@@ -91,7 +91,10 @@
     description = "jp";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ firefox neofetch obsidian ];
+
   };
+
+  fonts.fontDir.enable = true;
 
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
