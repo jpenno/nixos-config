@@ -5,10 +5,9 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [ # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -83,15 +82,15 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  # for obsidian
+  nixpkgs.config.permittedInsecurePackages = [ "electron-25.9.0" ];
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jp = {
     isNormalUser = true;
     description = "jp";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-      neofetch
-    ];
+    packages = with pkgs; [ firefox neofetch obsidian ];
   };
 
   # Enable automatic login for the user.
