@@ -8,6 +8,7 @@ in {
     ./user/app/media/mpv.nix
     ./user/app/terminal/kitty.nix
     ./user/app/git/git.nix
+    ./user/app/wm/hyprland.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
