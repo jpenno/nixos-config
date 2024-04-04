@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [ ./hypr_binds.nix ./binds.nix ];
+  imports = [ ./hypr_binds.nix ./binds.nix ./hyprpaper.nix ];
   wayland.windowManager.hyprland = {
     enable = true;
     plugins = [ ];
@@ -47,8 +47,7 @@
       $menu = wofi --show drun
 
       # Some default env vars.
-      env = XCURSOR_SIZE,24
-      env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
+      env = XCURSOR_SIZE,24 env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
 
       # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
       input {
@@ -133,8 +132,7 @@
       }
 
       gestures {
-          # See https://wiki.hyprland.org/Configuring/Variables/ for more
-          workspace_swipe = off
+          # See https://wiki.hyprland.org/Configuring/Variables/ for more workspace_swipe = off
       }
 
       misc {
@@ -176,7 +174,6 @@
 
   home.packages = with pkgs; [
     wlogout
-    hyprpaper
     libsForQt5.qt5.qtwayland
     qt6.qtwayland
     xdg-utils
