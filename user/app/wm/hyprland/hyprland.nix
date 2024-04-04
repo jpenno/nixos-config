@@ -1,7 +1,13 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [ ./hypr_binds.nix ./binds.nix ./hyprpaper.nix ];
+  imports = [
+    ./hypr_binds.nix
+    ./binds.nix
+    ./hyprpaper.nix
+    ../wlogout/wlogout.nix
+    ../../thunar/thunar.nix
+  ];
   wayland.windowManager.hyprland = {
     enable = true;
     plugins = [ ];
