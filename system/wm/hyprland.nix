@@ -15,7 +15,7 @@
 
   environment.sessionVariables = {
     # If your coursor becomes invisible
-    WLR_NO_HARDWARE_COURSORS = "1";
+    #WLR_NO_HARDWARE_COURSORS = "1";
     # Hint electron apps to use wayland
     #NIXOS_OZONE_WL = "1";
   };
