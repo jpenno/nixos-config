@@ -6,6 +6,7 @@
     ./binds.nix
     ./hyprpaper.nix
     ../wlogout/wlogout.nix
+    ../waybar/waybar.nix
     ../../thunar/thunar.nix
   ];
   wayland.windowManager.hyprland = {
