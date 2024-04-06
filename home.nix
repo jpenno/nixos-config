@@ -9,6 +9,7 @@ in {
     ./user/app/terminal/kitty.nix
     ./user/app/git/git.nix
     ./user/app/wm/hyprland/hyprland.nix
+    ./user/programming/go/go.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.

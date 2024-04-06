@@ -23,7 +23,7 @@ in {
       # source = ./config.el;
       text = ''
         (setq doom-theme 'doom-dracula)
-        (setq display-line-numbers-type t)
+        (setq display-line-numbers-type 'relative)
         (setq org-directory "~/org/")
         (setq doom-font (font-spec :family "'' + theme.font + ''" :size  ''
         + builtins.toString theme.fontSize + ''
