@@ -166,7 +166,7 @@
       windowrule = opacity 1.0 override 0.97 override,^(Brave-browser)$ # set opacity to 0.9 active obsidian
 
       # work space rulles
-      workspace=1,gapsin:0,gapsout:0,bordersize:0, monitor:DP-1, default:true, persistent:true
+      workspace=1,monitor:DP-1, default:true, persistent:true
       workspace=2,monitor:DP-1, default:true, persistent:true
       workspace=3,monitor:DP-1, default:true, persistent:true
       workspace=4,monitor:DP-1, default:true

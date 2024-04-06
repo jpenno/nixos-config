@@ -231,11 +231,6 @@
           padding-left: 15px;
           padding-top: 5px;
           padding-bottom: 5px;
-          margin-right: 15px;
-          margin-bottom: 5px;
-          margin-top: 5px;
-          margin-bottom: 5px;
-
       }
 
       #workspaces button.active {
