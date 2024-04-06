@@ -49,7 +49,7 @@
     };
     # Filemanager Launcher
     "custom/filemanager" = {
-      "format" = "";
+      "format" = "󰝰";
       "on-click" = "thunar";
       "tooltip" = false;
     };
@@ -88,17 +88,19 @@
       "tooltip" = false;
       # "scroll-step": 1, # %, can be a float
       "format" = "{icon} {volume}%";
-      "format-muted" = "";
+      "format-muted" = "󰝟";
       "format-icons" = { "default" = [ "" "" "" ]; };
       "on-click-right" = "pavucontrol";
-      "on-click" = "pactl set-sink-mute @DEFAULT_SINK@ toggle";
+      "on-click" = ''
+        wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+      '';
     };
 
-    "clock#time"= {
-        "format"= "{:%I:%M } ";
-        "format-alt"= "{:%a, %b %d %C%y} ";
-        "tooltip"= false;
-        "on-click-right"= "gsimplecal";
+    "clock#time" = {
+      "format" = "{:%I:%M } ";
+      "format-alt" = "{:%a, %b %d %C%y} ";
+      "tooltip" = false;
+      "on-click-right" = "gsimplecal";
     };
 
     # clock = {
