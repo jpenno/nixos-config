@@ -16,7 +16,7 @@
         # "3": "", # Icon: code
         "urgent" = "";
         "active" = "";
-        "default" = "";
+        "default" = "";
       };
     };
 
