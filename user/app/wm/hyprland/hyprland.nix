@@ -45,6 +45,7 @@
       # exec-once = waybar & hyprpaper & firefox
       exec-once = waybar
       exec-once = hyprpaper
+      exec-once = hyprctl setcursor Bibata-Modern-Ice 24
       # Source a file (multi-file configs)
       # source = ~/.config/hypr/myColors.conf
 
